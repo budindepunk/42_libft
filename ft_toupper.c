@@ -6,13 +6,13 @@
 /*   By: csilva-r <csilva-r@student.42berlin.d      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/17 17:19:45 by csilva-r          #+#    #+#             */
-/*   Updated: 2024/04/17 17:23:13 by csilva-r         ###   ########.fr       */
+/*   Updated: 2024/04/19 14:17:32 by csilva-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_toupper.c(int c)
+int	ft_toupper(int c)
 {
 	int	diff;
 

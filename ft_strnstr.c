@@ -6,7 +6,7 @@
 /*   By: csilva-r <csilva-r@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/19 11:23:55 by csilva-r          #+#    #+#             */
-/*   Updated: 2024/04/19 11:59:37 by csilva-r         ###   ########.fr       */
+/*   Updated: 2024/04/19 14:16:17 by csilva-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,11 +18,11 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 
 	little_len = ft_strlen(little);
 	if (little_len == 0)
-		return (big);
+		return ((char *)big);
 	while (*big && *(big + little_len) && len > 0)
 	{
 		if (ft_strncmp(big, little, little_len) == 0)
-			return (big);
+			return ((char *)big);
 		big++;
 		len--;
 	}

@@ -6,7 +6,7 @@
 /*   By: csilva-r <csilva-r@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/19 11:36:18 by csilva-r          #+#    #+#             */
-/*   Updated: 2024/04/19 13:59:03 by csilva-r         ###   ########.fr       */
+/*   Updated: 2024/04/19 14:10:37 by csilva-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define LIBFT_H
 
 # include <limits.h>
+# include <stddef.h>
 
 /* Libc */
 int		ft_isalpha(int c);
