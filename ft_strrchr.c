@@ -6,7 +6,7 @@
 /*   By: csilva-r <csilva-r@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/19 08:29:11 by csilva-r          #+#    #+#             */
-/*   Updated: 2024/04/19 09:01:00 by csilva-r         ###   ########.fr       */
+/*   Updated: 2024/04/22 15:17:06 by csilva-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	int	i;
+	int		i;
 	char	*hold;
 
 	i = 0;
