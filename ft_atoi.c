@@ -18,14 +18,14 @@ int	ft_atoi(const char *nptr)
 	int	sign;
 	int	num;
 
-	if (!nptr)
+	if (nptr[0] == '\0')
 		return (0);
 	num = 0;
 	i = 0;
-	while (nptr[i] <= ' ')
+	while (nptr[i] == ' ' || (nptr[i] >= 9 && nptr[i] <= 13))
 		i++;
 	sign = 1;
-	while (nptr[i] == '-' || nptr[i] == '+')
+	if (nptr[i] == '-' || nptr[i] == '+')
 	{
 		if (nptr[i] == '-')
 			sign = sign * (-1);
