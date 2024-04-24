@@ -1,32 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: csilva-r <csilva-r@student.42berlin.d      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/22 15:59:26 by csilva-r          #+#    #+#             */
-/*   Updated: 2024/04/23 15:59:24 by csilva-r         ###   ########.fr       */
+/*   Created: 2024/04/24 18:59:31 by csilva-r          #+#    #+#             */
+/*   Updated: 2024/04/24 19:07:51 by csilva-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memcpy(void *dest, const void *src, size_t n)
+char	*ft_strdup(const char *s)
 {
-	char	*s;
-	char	*d;
-	int		i;
+	char	*new;
 
-	s = (char *)src;
-	d = (char *)dest;
-	if (dest == src || n == 0)
-		return (dest);
-	i = 0;
-	while (i < (int)n)
-	{
-		d[i] = s[i];
-		i++;
-	}
-	return (dest);
+	new = malloc(sizeof(char) * (ft_strlen(s) + 1));
+	if (!new)
+		return (NULL);
+	ft_strlcpy(new, s, ft_strlen(s) + 1);
+	return (new);
 }
