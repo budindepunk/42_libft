@@ -6,7 +6,7 @@
 #    By: csilva-r <csilva-r@student.42berlin.d      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/24 14:01:38 by csilva-r          #+#    #+#              #
-#    Updated: 2024/04/24 14:11:14 by csilva-r         ###   ########.fr        #
+#    Updated: 2024/04/26 17:05:52 by csilva-r         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -35,7 +35,8 @@ $(NAME):	$(OBJS)
 
 clean:
 		$(RM) $(OBJS)
-
+		$(RM) $(NAME)
+	
 fclean:	clean
 		$(RM) $(NAME)
 

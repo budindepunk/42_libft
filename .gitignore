@@ -1,2 +1,5 @@
 *.[oa]
+a.out
 test*
+.*
+!.gitignore
