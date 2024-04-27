@@ -6,7 +6,7 @@
 #    By: csilva-r <csilva-r@student.42berlin.d      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/24 14:01:38 by csilva-r          #+#    #+#              #
-#    Updated: 2024/04/27 11:12:40 by csilva-r         ###   ########.fr        #
+#    Updated: 2024/04/27 11:33:57 by csilva-r         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,7 @@ SRCS	= ft_atoi.c ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isdigit.c \
 		ft_strlcpy.c ft_strlen.c ft_strncmp.c ft_strnstr.c \
 		ft_strrchr.c ft_tolower.c ft_toupper.c ft_bzero.c \
 		ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c ft_strtrim.c \
-		ft_itoa.c ft_strmapi.c
+		ft_itoa.c ft_strmapi.c ft_striteri.c
 
 OBJS	:= $(SRCS:%.c=%.o)
 NAME	= libft.a
