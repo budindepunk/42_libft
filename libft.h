@@ -6,7 +6,7 @@
 /*   By: csilva-r <csilva-r@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/19 11:36:18 by csilva-r          #+#    #+#             */
-/*   Updated: 2024/04/27 12:04:16 by csilva-r         ###   ########.fr       */
+/*   Updated: 2024/04/27 12:06:36 by csilva-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <limits.h>
 # include <stddef.h>
 # include <stdlib.h>
+# include <unistd.h>
 
 /* Libc */
 int		ft_isalpha(int c);
