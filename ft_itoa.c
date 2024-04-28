@@ -6,7 +6,7 @@
 /*   By: csilva-r <csilva-r@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/26 16:16:55 by csilva-r          #+#    #+#             */
-/*   Updated: 2024/04/28 16:45:21 by csilva-r         ###   ########.fr       */
+/*   Updated: 2024/04/28 17:48:29 by csilva-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,7 +60,7 @@ char	*ft_itoa(int n)
 		i = 1;
 		length++;
 	}
-	new = (char *)malloc(sizeof(char) * length);
+	new = (char *)malloc(sizeof(char) * (length + 1));
 	if (!new)
 		return (NULL);
 	populate(i, length, n, new);
