@@ -6,7 +6,7 @@
 /*   By: csilva-r <csilva-r@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/19 11:36:18 by csilva-r          #+#    #+#             */
-/*   Updated: 2024/04/28 19:08:54 by csilva-r         ###   ########.fr       */
+/*   Updated: 2024/04/28 19:59:44 by csilva-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,5 +63,8 @@ typedef struct s_list
 	void			*content;
 	struct s_list	*next;
 }		t_list;
+
+t_list	*ft_lstnew(void *content);
+void	ft_lstadd_front(t_list **lst, t_list *new);
 
 #endif
