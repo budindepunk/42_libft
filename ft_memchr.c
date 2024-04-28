@@ -6,7 +6,7 @@
 /*   By: csilva-r <csilva-r@student.42berlin.d      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 15:27:53 by csilva-r          #+#    #+#             */
-/*   Updated: 2024/04/23 15:08:54 by csilva-r         ###   ########.fr       */
+/*   Updated: 2024/04/28 19:05:36 by csilva-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,18 @@
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
-	int		i;
-	char	*str;
+	size_t			i;
+	char			*str;
 
+	if (!s)
+		return (NULL);
 	str = (char *)s;
 	i = 0;
-	while (i < (int)n)
+	while (i < n)
 	{
 		if (str[i] == c)
 			return ((void *)(s + i));
 		i++;
 	}
-	return (NULL);
+	return (0);
 }
