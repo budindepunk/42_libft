@@ -6,7 +6,7 @@
 /*   By: csilva-r <csilva-r@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/26 19:49:45 by csilva-r          #+#    #+#             */
-/*   Updated: 2024/04/26 20:07:25 by csilva-r         ###   ########.fr       */
+/*   Updated: 2024/04/28 17:23:56 by csilva-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ static int	count_words(char const *s, char c)
 	int	i;
 	int	check;
 
+	if (!s)
+		return (1);
 	i = 0;
 	count = 0;
 	check = 0;
@@ -49,15 +51,15 @@ static int	find_index(char const *s, char c)
 	return (i);
 }
 
-char		**ft_split(char const *s, char c)
+char	**ft_split(char const *s, char c)
 {
 	char	**new;
-	int	cut_from;
-	int	cut_to;
-	int	i;
+	int		cut_from;
+	int		cut_to;
+	int		i;
 
 	new = (char **)malloc(sizeof(char *) * (count_words(s, c) + 1));
-	if (!new || !s)
+	if (!new)
 		return (NULL);
 	i = 0;
 	cut_from = 0;
@@ -73,6 +75,5 @@ char		**ft_split(char const *s, char c)
 		cut_from += cut_to + 1;
 		i++;
 	}
-	new[i] = '\0';
 	return (new);
 }

@@ -6,7 +6,7 @@
 /*   By: csilva-r <csilva-r@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/26 16:16:55 by csilva-r          #+#    #+#             */
-/*   Updated: 2024/04/26 17:03:10 by csilva-r         ###   ########.fr       */
+/*   Updated: 2024/04/28 16:45:21 by csilva-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,8 +49,8 @@ static void	populate(int i, int length, int n, char *new)
 
 char	*ft_itoa(int n)
 {
-	int	i;
-	int	length;
+	int		i;
+	int		length;
 	char	*new;
 
 	length = count_digits(n);

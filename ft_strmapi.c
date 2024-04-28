@@ -6,7 +6,7 @@
 /*   By: csilva-r <csilva-r@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/27 11:03:22 by csilva-r          #+#    #+#             */
-/*   Updated: 2024/04/27 11:11:10 by csilva-r         ###   ########.fr       */
+/*   Updated: 2024/04/28 16:09:01 by csilva-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	char	*new;
-	int	i;
+	int		i;
 
 	if (!s || !f)
 		return (NULL);
