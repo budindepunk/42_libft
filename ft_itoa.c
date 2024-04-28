@@ -6,7 +6,7 @@
 /*   By: csilva-r <csilva-r@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/26 16:16:55 by csilva-r          #+#    #+#             */
-/*   Updated: 2024/04/28 17:48:29 by csilva-r         ###   ########.fr       */
+/*   Updated: 2024/04/28 19:16:20 by csilva-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,6 +53,8 @@ char	*ft_itoa(int n)
 	int		length;
 	char	*new;
 
+	if (n == INT_MIN)
+		return (ft_strdup("-2147483648"));
 	length = count_digits(n);
 	i = 0;
 	if (n < 0)
