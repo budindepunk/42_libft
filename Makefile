@@ -6,7 +6,7 @@
 #    By: csilva-r <csilva-r@student.42berlin.d      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/24 14:01:38 by csilva-r          #+#    #+#              #
-#    Updated: 2024/04/28 20:03:07 by csilva-r         ###   ########.fr        #
+#    Updated: 2024/04/29 15:56:10 by csilva-r         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,8 +18,10 @@ SRCS	= ft_atoi.c ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isdigit.c \
 		ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c ft_strtrim.c \
 		ft_itoa.c ft_strmapi.c ft_striteri.c ft_putchar_fd.c \
 		ft_putendl_fd.c ft_putstr_fd.c ft_putnbr_fd.c ft_split.c
-SRCS_BONUS	= ft_lstnew_bonus.c ft_lstadd_front_bonus.c
-
+SRCS_BONUS	= ft_lstadd_front.c ft_lstsize.c ft_lstnew.c \
+			ft_lstlast.c ft_lstadd_back.c \
+			ft_lstdelone.c
+			
 OBJS	:= $(SRCS:%.c=%.o)
 OBJS_BONUS := $(SRCS_BONUS:%.c=%.o)
 
