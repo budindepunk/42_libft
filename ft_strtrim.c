@@ -6,7 +6,7 @@
 /*   By: csilva-r <csilva-r@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/25 15:58:54 by csilva-r          #+#    #+#             */
-/*   Updated: 2024/04/28 16:54:20 by csilva-r         ###   ########.fr       */
+/*   Updated: 2024/04/30 09:37:34 by csilva-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,17 +18,18 @@ char	*ft_strtrim(char const *s1, char const *set)
 	size_t	end;
 	char	*new;
 
-	if (!s1)
-		return (NULL);
-	if (!set)
-		return (ft_strdup(s1));
+	new = 0;
+	if (!s1 || !set)
+		return (new);
 	start = 0;
 	while (s1[start] && ft_strchr(set, s1[start]))
 		start++;
-	end = ft_strlen(s1) - 1;
-	while (s1[end] && ft_strchr(set, s1[end]))
+	end = ft_strlen(s1);
+	while (s1[end - 1] && ft_strchr(set, s1[end - 1]) && end > start)
 		end--;
 	end++;
-	new = ft_substr(s1, start, end - start);
+	new = (char *)malloc(sizeof(char) * (end - start));
+	if (new)
+		ft_strlcpy(new, &s1[start], end - start);
 	return (new);
 }
