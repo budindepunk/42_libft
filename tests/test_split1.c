@@ -45,7 +45,7 @@ char **ft_split(char const *s, char c)
     int cut_from;
     int cut_to;
     int i;
-    int j;
+    // int j;
 
     new = (char **)malloc(sizeof(char *) * (count_words(s, c) + 1));
     if (!new || !s)
@@ -71,7 +71,7 @@ char **ft_split(char const *s, char c)
         write(1, "\n", 1);
         i++;
     }
-    new[i] = NULL;
+    new[i] = '\0';
     return (new);
 }
 
