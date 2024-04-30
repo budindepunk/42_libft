@@ -6,7 +6,7 @@
 /*   By: csilva-r <csilva-r@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/26 19:49:45 by csilva-r          #+#    #+#             */
-/*   Updated: 2024/04/28 18:46:46 by csilva-r         ###   ########.fr       */
+/*   Updated: 2024/04/30 10:47:19 by csilva-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,10 +58,8 @@ char	**ft_split(char const *s, char c)
 	int		cut_to;
 	int		i;
 
-	if (*s == '\0')
-		new = NULL;
 	new = (char **)malloc(sizeof(char *) * (count_words(s, c) + 1));
-	if (!new)
+	if (!new || !s)
 		return (NULL);
 	i = 0;
 	cut_from = 0;
@@ -77,5 +75,6 @@ char	**ft_split(char const *s, char c)
 		cut_from += cut_to + 1;
 		i++;
 	}
+	new[i] = '\0';
 	return (new);
 }
