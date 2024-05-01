@@ -27,7 +27,7 @@ OBJS	:= $(SRCS:%.c=%.o)
 OBJS_BONUS := $(SRCS_BONUS:%.c=%.o)
 
 NAME	= libft.a
-CC	= gcc
+CC	= cc
 RM	= rm -f
 CFLAGS	= -Wall -Wextra -Werror -I.
 
