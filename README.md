@@ -15,9 +15,9 @@ This library will be updated over time to include more functions and definitions
   - <code>lstiter</code>, <code>lstmap</code>
 <br>
 <h2>Functions overview</h2>
-The list of functions and their desired functionality can be found in the assignment.
+The list of functions and their desired functionality can be found in <a href="https://github.com/budindepunk/42_libft/blob/main/en.subject.pdf">the assignment</a>.
 <h2>Resources</h2>
 In addition to writing my own tests, I used <a href="https://github.com/xicodomingues/francinette">Francinette</a>.<br>
 Francinette compiles tests from <a href="https://github.com/Tripouille/libftTester">libftTester</a>, <a href="https://github.com/y3ll0w42/libft-war-machine">warmachine</a> and <a href="https://github.com/alelievr/libft-unit-test">libft-unit-test</a>.<br>
-<br><br>
+<br>
 <sub>Feel free to reach me through slack at @csilva-r</sub>
