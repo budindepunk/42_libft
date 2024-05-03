@@ -51,6 +51,20 @@ static int	find_index(char const *s, char c)
 	return (i);
 }
 
+static char	**free_and_return_null(char **new)
+{
+	int	i;
+
+	i = 0;
+	while (new[i] != NULL)
+	{
+		free(new[i]);
+		i++;
+	}
+	free(new);
+	return (NULL);
+}
+
 char	**ft_split(char const *s, char c)
 {
 	char	**new;
@@ -70,7 +84,7 @@ char	**ft_split(char const *s, char c)
 		cut_to = find_index(s + cut_from, c);
 		new[i] = (char *)malloc(sizeof(char) * (cut_to + 1));
 		if (!new[i])
-			return (NULL);
+			return (free_and_return_null(new));
 		ft_strlcpy(new[i], s + cut_from, cut_to + 1);
 		cut_from += cut_to + 1;
 		i++;
