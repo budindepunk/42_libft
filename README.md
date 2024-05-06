@@ -20,4 +20,6 @@ The list of functions and their desired functionality can be found in <a href="h
 In addition to writing my own tests, I used <a href="https://github.com/xicodomingues/francinette">Francinette</a>.<br>
 Francinette compiles tests from <a href="https://github.com/Tripouille/libftTester">libftTester</a>, <a href="https://github.com/y3ll0w42/libft-war-machine">warmachine</a> and <a href="https://github.com/alelievr/libft-unit-test">libft-unit-test</a>.<br>
 <br>
+<img src="https://github.com/budindepunk/42_libft/assets/83190363/1c6ce4f0-fd04-4a42-aa1e-3e769a63f7dc">
+
 <sub>Feel free to reach me through slack at @csilva-r</sub>
