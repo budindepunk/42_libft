@@ -18,6 +18,11 @@
 # include <stdlib.h>
 # include <unistd.h>
 # include <stdint.h>
+# include <stdarg.h>
+
+# define HEX_BASE_UPP "0123456789ABCDEF"
+# define HEX_BASE_LOW "0123456789abcdef"
+# define DEC_BASE "0123456789"
 
 /* Libc */
 int		ft_isalpha(int c);
@@ -56,6 +61,13 @@ void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
+
+/* PrintF */
+int	pf_putunbr(unsigned int n, char *charset, int counter);
+int	pf_putstr(char *s, int counter);
+int	pf_putptr(unsigned long long ptr, char *charset, int counter);
+int	pf_putnbr(int n, char *charset, int counter, int sign_matters);
+int	pf_putchar(char c, int counter);
 
 /* Bonus */
 typedef struct s_list
