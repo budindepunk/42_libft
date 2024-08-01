@@ -13,6 +13,8 @@ This library will be updated over time to include more functions and definitions
   - <code>lstnew</code>, <code>lstadd_front</code>, <code>lastadd_back</code>, <code>lstsize</code>, <code>lastlast</code>
   - <code>lstdelone</code>, <code>lstclear</code>
   - <code>lstiter</code>, <code>lstmap</code>
+- Functions added later (not in the project):
+  - <a href="https://github.com/budindepunk/42_printf">ft_printf</a>, <a href="https://github.com/budindepunk/42_get_next_line">get_netxt_line</a>
 <br>
 <h2>Functions overview</h2>
 The list of functions and their desired functionality can be found in <a href="https://github.com/budindepunk/42_libft/blob/main/en.subject.pdf">the assignment</a>.
