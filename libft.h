@@ -19,6 +19,7 @@
 # include <unistd.h>
 # include <stdint.h>
 # include <stdarg.h>
+# include <fcntl.h>
 
 # define HEX_BASE_UPP "0123456789ABCDEF"
 # define HEX_BASE_LOW "0123456789abcdef"
@@ -63,11 +64,21 @@ void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
 
 /* PrintF */
+int	ft_printf(const char *input, ...);
 int	pf_putunbr(unsigned int n, char *charset, int counter);
 int	pf_putstr(char *s, int counter);
 int	pf_putptr(unsigned long long ptr, char *charset, int counter);
 int	pf_putnbr(int n, char *charset, int counter, int sign_matters);
 int	pf_putchar(char c, int counter);
+
+/* Get_next_line */
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 30
+# endif
+# ifndef MAX_ITEMS
+#  define MAX_ITEMS 1024
+# endif
+char	*get_next_line(int fd);
 
 /* Bonus */
 typedef struct s_list
